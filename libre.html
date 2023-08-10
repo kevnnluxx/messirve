@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Música y Color</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: white;
+            transition: background-color 0.5s;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Música y Color</h1>
+
+    <button id="playButton" onclick="reproducirCancion()">Play</button>
+
+    <audio id="audioPlayer" loop>
+        <source src="c.mp3" type="audio/mpeg"> <!-- Reemplaza "Eminem - Without Me (Official Music Video)" con la ubicación de tu archivo de audio -->
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <script>
+        function reproducirCancion() {
+            var audioPlayer = document.getElementById("audioPlayer");
+            var playButton = document.getElementById("playButton");
+
+            if (audioPlayer.paused) {
+                audioPlayer.play();
+                playButton.innerText = "Pause";
+                cambiarFondo();
+            } else {
+                audioPlayer.pause();
+                playButton.innerText = "Play";
+                detenerCambioFondo();
+            }
+        }
+
+        var colors = ["red", "blue", "green", "yellow", "purple", "orange"];
+        var intervalId;
+
+        function cambiarFondo() {
+            var body = document.body;
+            var index = 0;
+
+            intervalId = setInterval(function() {
+                body.style.backgroundColor = colors[index];
+                index = (index + 1) % colors.length;
+            }, 10000); // Cambia el color cada .01 segundo (1000 ms)
+        }
+
+        function detenerCambioFondo() {
+            clearInterval(intervalId);
+        }
+    </script>
+</body>
+</html>

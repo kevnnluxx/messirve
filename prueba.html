@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Currículum</title>
+    <!-- Agrega los enlaces a las librerías de Bootstrap y JavaScript -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Estilo personalizado para el currículum -->
+    <style>
+        body {
+            background-color: #0f5129; /* Verde oscuro */
+            background-image: url('fondo.jpg'); /* Imagen de fondo relacionada con el fútbol */
+            background-repeat: no-repeat; /* Evita repetir la imagen */
+            background-size: cover; /* Ajusta la imagen de fondo al tamaño del contenedor */
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .img-fluid {
+            max-width: 200px;
+            border: 3px solid white;
+            border-radius: 50%;
+        }
+
+        h1, h2, h3 {
+            margin-top: 0;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        hr {
+            border-top: 1px solid white;
+        }
+
+        p {
+            margin: 0;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Contorno negro */
+        }
+
+        .whatsapp-button {
+            display: inline-block;
+            background-color: #25D366; /* Verde de WhatsApp */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .col-md-8 {
+            padding-left: 40px; /* Añadir espacio al lado izquierdo para separar del borde */
+        }
+
+        /* Estilo para los títulos de habilidades, idiomas y experiencia laboral */
+        h2 {
+            color: #ffcd05; /* Amarillo */
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        /* Estilo para el botón de WhatsApp al pasar el cursor */
+        .whatsapp-button:hover {
+            background-color: #128C7E; /* Verde más oscuro */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <!-- Agrega tu foto aquí -->
+                <img src="./assets/elmejor.JPG" class="img-fluid rounded-circle" alt="Foto de Leonel Messi">
+            </div>
+            <div class="col-md-8">
+                <h1>LEONEL ANDRÉS MESSI</h1>
+                <p>FUTBOLISTA / JUGADOR PROFESIONAL</p>
+                <hr>
+                <h2>HABILIDADES</h2>
+                <ul>
+                    <li>Llevarse a varios jugadores</li>
+                    <li>Habilidad 2</li>
+                    <li>Habilidad 3</li>
+                    <!-- Agrega más habilidades si es necesario -->
+                </ul>
+                <hr>
+                <h2>IDIOMAS</h2>
+                <ul>
+                    <li>Argentino</li>
+                    <li>mandarin  - 100</li>
+                    <li>portugues  - 100</li>
+                    <!-- Agrega más idiomas si es necesario -->
+                </ul>
+                <hr>
+                <h2>EXPERIENCIA LABORAL</h2>
+                <p><strong>Nombre de la Empresa 1</strong> - Cargo</p>
+                <p>Fecha de inicio - Fecha de finalización</p>
+                <p>Descripción de tus responsabilidades y logros.</p>
+                <p><strong>Nombre de la Empresa 2</strong> - Cargo</p>
+                <p>Fecha de inicio - Fecha de finalización</p>
+                <p>Descripción de tus responsabilidades y logros.</p>
+                <!-- Agrega más experiencias laborales si es necesario -->
+
+                <!-- Botón para redireccionar a WhatsApp -->
+                <a class="whatsapp-button" href="https://wa.me/52661180" target="_blank">Contactar por WhatsApp</a>
+				<a    class="whatsapp-button"href="./libre.html"><button>   rolitaa  </button></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
